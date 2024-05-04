@@ -2,10 +2,9 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
-const path= require("path")
 const { bgCyan } = require("colors");
 require("colors");
+
 const connectDb = require("./config/config");
 //dotenv config
 if(process.env.NODE_ENV!=="PRODUCTION"){
@@ -31,10 +30,8 @@ app.use("/api/bills", require("./routes/billsRoutes"));
 app.get("/",(req,res)=>{
   res.send("<h1>POS BACKEND </h1>");
 });
-app.use(express.static(path.join(__dirname,"../client/build")));
-app.get("*",(req,res)=>{
-  res.sendFile(path.resolve(__dirname,"..client//build/index.html"));
-})
+
+
 //port
 const PORT = process.env.PORT || 8080;
 
