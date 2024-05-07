@@ -17,7 +17,13 @@ connectDb();
 const app = express();
 
 //middlwares
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://pos-client-31hv.vercel.app/",
+    origin:true,
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

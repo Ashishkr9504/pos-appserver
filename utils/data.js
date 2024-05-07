@@ -128,7 +128,7 @@ const items = [
     name: "Chicken chawmin",
     price: 50,
     category: "noodles",
-    image: "https://www.fatmicky.com/wp-content/uploads/2023/04/Chicken-Fried-Noodles-1.jpg",
+    image: "https://drivemehungry.com/wp-content/uploads/2020/08/chicken-chow-mein-2.jpg",
   },
   {
     name: "Egg Chawmein",
