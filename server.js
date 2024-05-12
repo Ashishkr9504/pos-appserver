@@ -19,8 +19,8 @@ const app = express();
 //middlwares
 app.use(
   cors({
-    origin: "https://pos-client-bz8z.vercel.app/",
-    origin:true,
+    origin: ["https://pos-client-bz8z.vercel.app/"],
+    methods: ["POST","GET"],
     credentials: true,
   })
 );
